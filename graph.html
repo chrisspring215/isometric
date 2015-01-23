@@ -1,0 +1,68 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation 5.4.5</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/graph.js"></script>
+
+  </head>
+  <body onload="svgInit()">
+    <div class="row">
+      <div class="large-12 columns">
+        <svg id="graphPaper">
+
+        </svg>
+      </div>
+
+      <div class="large-12 large-centered columns">
+        <div class="row">
+          <div class="large-1 columns">
+            <label>Jan 1, 2015
+              <input onchange="reloadGraph()" id="wk1day1Data" type="number" value="3">
+            </label>
+          </div>
+          <div class="large-1 columns">
+            <label>Jan 2, 2015
+              <input onchange="reloadGraph()" id="wk1day2Data" type="number" value="3">
+            </label>
+          </div>
+          <div class="large-1 columns">
+            <label>Jan 3, 2015
+              <input onchange="reloadGraph()" id="wk1day3Data" type="number" value="3">
+            </label>
+          </div>
+          <div class="large-1 columns">
+            <label>Jan 4, 2015
+              <input onchange="reloadGraph()" id="wk1day4Data" type="number" value="3">
+            </label>
+          </div>
+          <div class="large-1 columns">
+            <label>Jan 5, 2015
+              <input onchange="reloadGraph()" id="wk1day5Data" type="number" value="3">
+            </label>
+          </div>
+          <div class="large-1 columns">
+            <label>Jan 6, 2015
+              <input onchange="reloadGraph()" id="wk1day6Data" type="number" value="3">
+            </label>
+          </div>
+          <div class="large-1 columns end">
+            <label>Jan 7, 2015
+              <input onchange="reloadGraph()" id="wk1day7Data" type="number" value="3">
+            </label>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

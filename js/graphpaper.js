@@ -40,6 +40,18 @@ function init () {
 	};
 };
 
+function makePipe() {
+	var pipe = document.createElementNS('http://www.w3.org/2000/svg','line');
+	pipe.setAttribute('x1', 0 + '%');
+	pipe.setAttribute('y1', 25 + '%');
+	pipe.setAttribute('x2', 100 + '%');
+	pipe.setAttribute('y2', 100 + '%');
+	pipe.setAttribute('stroke-width', 1);
+	pipe.setAttribute('stroke', '#000');
+	graphPaper.appendChild(pipe);
+	alert('hello');
+}
+
 function reload() {
 		location.reload();
 	};
