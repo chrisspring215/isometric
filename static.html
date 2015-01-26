@@ -6,27 +6,15 @@
     <title>Foundation 5.4.5</title>
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/vendor/modernizr.js"></script>
-    <script src="js/graphpaper.js"></script>
+    <script src="js/staticgraphpaper.js"></script>
   </head>
   <body onload="init()">
     
     <svg id="graphPaper">
     </svg>
 
-    <label>Canvas Size
-      <input onchange="resizer()" onmouseup="reload()" id="resizer" type="range" max="1280" min="640"  >
-    </label>
-
-    <label>Zoom
-      <input onchange="zoom()" onmouseup="reload()" id="zoom" type="range" max="20" min="4"  >
-    </label>
-
     <label>Generate Pipe
-      <input onmouseup="makePipe()" id="makePipe" type="button" Value="Make Pipe">
-    </label>
-
-    <label>Generate Wall
-      <input onmouseup="makeWall()" id="makeWall" type="button" Value="Make Wall">
+      <input onclick="rotateEast()" id="rotateEast" type="button" Value="rotateEast">
     </label>
 
     <script src="js/vendor/jquery.js"></script>

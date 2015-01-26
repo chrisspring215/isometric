@@ -49,7 +49,6 @@ function makePipe() {
 	pipe.setAttribute('stroke-width', 1);
 	pipe.setAttribute('stroke', '#000');
 	graphPaper.appendChild(pipe);
-	alert('hello');
 }
 
 function reload() {
