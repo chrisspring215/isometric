@@ -75,6 +75,11 @@ function init () {
 
 	/* PIPES */
 
+	/* Sets line color and thickness */
+	var lineColor = '#444';
+	var lineWidth = 1;
+
+
 	for (var i = 0; i < 1; i++) {
 
 		var svgLine1 = document.createElementNS('http://www.w3.org/2000/svg','line');
@@ -82,8 +87,8 @@ function init () {
 		svgLine1.setAttribute('y1', 60 + '%');
 		svgLine1.setAttribute('x2', 60 + '%');
 		svgLine1.setAttribute('y2', 50 + '%');
-		svgLine1.setAttribute('stroke-width', 3);
-		svgLine1.setAttribute('stroke', 'red');
+		svgLine1.setAttribute('stroke-width', lineWidth);
+		svgLine1.setAttribute('stroke', lineColor);
 		graphPaper.appendChild(svgLine1);
 	};
 
@@ -94,8 +99,8 @@ function init () {
 		svgLine2.setAttribute('y1', 50 + '%');
 		svgLine2.setAttribute('x2', 50 + '%');
 		svgLine2.setAttribute('y2', 60 + '%');
-		svgLine2.setAttribute('stroke-width', 3);
-		svgLine2.setAttribute('stroke', 'red');
+		svgLine2.setAttribute('stroke-width', lineWidth);
+		svgLine2.setAttribute('stroke', lineColor);
 		graphPaper.appendChild(svgLine2);
 	};
 
@@ -106,8 +111,8 @@ function init () {
 		svgLine3.setAttribute('y1', 50 + '%');
 		svgLine3.setAttribute('x2', 50 + '%');
 		svgLine3.setAttribute('y2', 40 + '%');
-		svgLine3.setAttribute('stroke-width', 3);
-		svgLine3.setAttribute('stroke', 'red');
+		svgLine3.setAttribute('stroke-width', lineWidth);
+		svgLine3.setAttribute('stroke', lineColor);
 		graphPaper.appendChild(svgLine3);
 	};
 
@@ -118,8 +123,20 @@ function init () {
 		svgLine3.setAttribute('y1', 40 + '%');
 		svgLine3.setAttribute('x2', 60 + '%');
 		svgLine3.setAttribute('y2', 50 + '%');
-		svgLine3.setAttribute('stroke-width', 3);
-		svgLine3.setAttribute('stroke', 'red');
+		svgLine3.setAttribute('stroke-width', lineWidth);
+		svgLine3.setAttribute('stroke', lineColor);
+		graphPaper.appendChild(svgLine3);
+	};
+
+	for (var i = 0; i < 1; i++) {
+
+		var svgLine3 = document.createElementNS('http://www.w3.org/2000/svg','line');
+		svgLine3.setAttribute('x1', 40+ '%');
+		svgLine3.setAttribute('y1', 50 + '%');
+		svgLine3.setAttribute('x2', 40 + '%');
+		svgLine3.setAttribute('y2', 100 + '%');
+		svgLine3.setAttribute('stroke-width', lineWidth);
+		svgLine3.setAttribute('stroke', lineColor);
 		graphPaper.appendChild(svgLine3);
 	};
 
@@ -129,11 +146,13 @@ function init () {
 		svgLine3.setAttribute('x1', 60 + '%');
 		svgLine3.setAttribute('y1', 50 + '%');
 		svgLine3.setAttribute('x2', 60 + '%');
-		svgLine3.setAttribute('y2', 60 + '%');
-		svgLine3.setAttribute('stroke-width', 3);
-		svgLine3.setAttribute('stroke', 'red');
+		svgLine3.setAttribute('y2', 100 + '%');
+		svgLine3.setAttribute('stroke-width', lineWidth);
+		svgLine3.setAttribute('stroke', lineColor);
 		graphPaper.appendChild(svgLine3);
 	};
+
+	
 
 	for (var i = 0; i < 1; i++) {
 
@@ -141,11 +160,13 @@ function init () {
 		svgLine3.setAttribute('x1', 50 + '%');
 		svgLine3.setAttribute('y1', 60 + '%');
 		svgLine3.setAttribute('x2', 50 + '%');
-		svgLine3.setAttribute('y2', 70 + '%');
-		svgLine3.setAttribute('stroke-width', 3);
-		svgLine3.setAttribute('stroke', 'red');
+		svgLine3.setAttribute('y2', 100 + '%');
+		svgLine3.setAttribute('stroke-width', lineWidth);
+		svgLine3.setAttribute('stroke', lineColor);
 		graphPaper.appendChild(svgLine3);
 	};
+
+
 };
 
 

@@ -11,11 +11,15 @@
   <body onload="init()">
     
     <svg id="graphPaper">
+      <rect x="50%" y="50%" width="10%" height="10%"
+      style="stroke: #000000; fill:red;"
+       transform="scale(1, 1) rotate(45)"  />
     </svg>
 
     <label>Generate Pipe
       <input onclick="rotateEast()" id="rotateEast" type="button" Value="rotateEast">
     </label>
+
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
